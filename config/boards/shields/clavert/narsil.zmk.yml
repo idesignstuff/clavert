@@ -1,0 +1,11 @@
+file_format: "1"
+id: narsil
+name: narsil
+type: shield
+requires: [seeed_xiao]
+features:
+  - keys
+  - encoder
+siblings:
+  - narsil_left
+  - narsil_right
