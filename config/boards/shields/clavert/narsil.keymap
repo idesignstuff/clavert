@@ -38,7 +38,7 @@
     &kp A     &kp S     &kp D     &kp F     &kp G                                    &kp H    &kp J  &kp K     &kp L    &kp SEMI 
     &kp Z     &kp X     &kp C     &kp V     &kp B  &lt FN DEL             &kp PG_UP  &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH 
                                   &kp LGUI  &kp SPACE &kp BSPC     &lt NAV END &lt NAV PG_DN &kp DEL   
-
+          >;
           sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
@@ -50,11 +50,11 @@
 // | trans | none  | none  | none  | none  | none | trans | trans |  | TgMAC | trans | none  | none | none | none  | none  | none  |
 // | trans | trans | trans | trans | trans        | trans | trans |  | trans | trans | trans        | none | none  | trans | trans |
           bindings = <
-    &none  &none  &none  &none  &none  &none                                        &none &kp HOME &kp INS  &kp PG_UP &none  &none 
-    &trans &none  &none  &none  &none  &none  &trans                      &trans    &none &kp END  &kp UP   &kp PG_DN &none  &none 
-    &trans &none  &none  &none  &none  &none  &kp CAPS                    &kp PSCRN &none &kp LEFT &kp DOWN &kp RIGHT &none  &none 
-    &trans &none  &none  &none  &none  &none  &trans   &trans    &tog MAC &trans    &none &none    &none    &none     &none  &none 
-    &trans &trans &trans &trans &trans        &trans   &trans    &trans   &trans    &trans         &none    &none     &trans &trans
+    &none  &none  &none  &none  &none                              &none &kp HOME &kp INS  &kp PG_UP &none  
+    &none  &none  &none  &none  &none                              &none &kp END  &kp UP   &kp PG_DN &none  
+    &none  &none  &none  &none  &none                              &kp PSCRN &none &kp LEFT &kp DOWN &kp RIGHT 
+    &none  &none  &none  &none  &none  &trans             &trans    &tog MAC &trans    &none &none    &none   
+                         &trans &trans &trans             &trans   &trans    &trans
           >;
 
           sensor-bindings = <&inc_dec_kp UP DOWN>;
