@@ -85,39 +85,7 @@
             tap-ms = <40>;
             wait-ms = <40>;
         };
-      ZMK_MACRO(CDR,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp C &kp H &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp DOT &kp D &kp DOT &kp R &kp I &kp T &kp C &kp H &kp I &kp E>
-                  , <&macro_press &kp LSFT>
-                  , <&macro_tap &kp N2>,
-                  , <&macro_release &kp LSFT>
-                  , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-      )
-      ZMK_MACRO(WES,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp W &kp E &kp DOT &kp E &kp A &kp T &kp DOT &kp S &kp P &kp A &kp M &kp A &kp L &kp O &kp T &kp>
-                  , <&macro_press &kp LSFT>
-                  , <&macro_tap &kp N2>,
-                  , <&macro_release &kp LSFT>
-                  , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-      )
-
-ZMK_MACRO(RCT,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp I &kp E &kp UNDER &kp C &kp H &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp UNDER &kp D>
-                  , <&macro_press &kp LSFT>
-                  , <&macro_tap &kp N2>,
-                  , <&macro_release &kp LSFT>
-                  , <&kp C &kp A &kp T &kp DOT &kp C &kp O &kp M>;
-      )
-ZMK_MACRO(RIT,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp C &kp D>;
-      )
+      
     };
 };
 
@@ -236,4 +204,38 @@ ZMK_MACRO(RIT,
         };
     };
   };
-  
+
+/*
+ZMK_MACRO(CDR,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp C &kp H &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp DOT &kp D &kp DOT &kp R &kp I &kp T &kp C &kp H &kp I &kp E>
+                  , <&macro_press &kp LSFT>
+                  , <&macro_tap &kp N2>,
+                  , <&macro_release &kp LSFT>
+                  , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+      )
+      ZMK_MACRO(WES,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp W &kp E &kp DOT &kp E &kp A &kp T &kp DOT &kp S &kp P &kp A &kp M &kp A &kp L &kp O &kp T &kp>
+                  , <&macro_press &kp LSFT>
+                  , <&macro_tap &kp N2>,
+                  , <&macro_release &kp LSFT>
+                  , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+      )
+
+ZMK_MACRO(RCT,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp I &kp E &kp UNDER &kp C &kp H &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp UNDER &kp D>
+                  , <&macro_press &kp LSFT>
+                  , <&macro_tap &kp N2>,
+                  , <&macro_release &kp LSFT>
+                  , <&kp C &kp A &kp T &kp DOT &kp C &kp O &kp M>;
+      )
+ZMK_MACRO(RIT,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp C &kp D>;
+      )*/
