@@ -29,12 +29,12 @@
 
         combo_capslock {
             bindings = <&caps_word>;
-            key-positions = <13 16>;
+            key-positions = <23 26>;
             layers = <0>;
         };
         combo_winlock {
-            bindings = <LA(LGUI)>;
-            key-positions = <13 16>;
+            bindings = <&kp LA(LGUI)>;
+            key-positions = <27 28>;
             layers = <0>;
         };
     };
