@@ -141,7 +141,7 @@
 //                       | LGUI | SPACE | BSPC  |   | LtNAV END | LtNAV PG_DN | DEL |
           bindings = <
     &gqt LS(N1) N1 &gqt LS(N2) N2 &gqt LS(N3) N3 &gqt LS(N4) N4 &gqt LS(N5) N5 &gqt LS(N6) N6 &gqt LS(N7) N7 &gqt LS(N8) N8 &gqt LS(N9) N9 &gqt LS(N0) N0 
-    &kp Q     &GQT WES W     &kp E     &GQT RCD R     &gqt RIT T                    &kp Y    &kp U  &kp I     &kp O    &gqt PSCRN P   
+    &kp Q     &GQT degree_sym W     &kp E &GQT CircleR R &gqt TM T                    &kp Y    &kp U  &kp I     &kp O    &gqt PSCRN P   
     &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G                  &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt LGUI SQT 
     &kp Z     &kp X     &kp C     &kp V     &kp B  &C_A_D             &kp C_MUTE  &kp N    &kp M  &kp COMMA &kp DOT  &kp FSLH 
                             &lt FN ESC  &lt NAV SPACE  &lt NUM TAB   &lt NUM RET &lt NAV BSPC &lt FN DEL   
