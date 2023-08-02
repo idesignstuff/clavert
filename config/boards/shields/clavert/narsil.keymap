@@ -71,7 +71,7 @@
     &kp Z     &kp X     &kp C     &kp V     &kp B  &kp LC(LA(DEL))     &kp C_MUTE    &kp N    &kp M  &kp COMMA  &kp DOT  &gqt LA(LGUI) FSLH 
                             &lt FN ESC  &lt NAV SPACE  &lt NUM TAB   &lt NUM RET &lt NAV BSPC &lt FN DEL   
           >;
-          sensor-bindings = <&inc_dec_kp UP DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         nav_layer {
@@ -89,7 +89,7 @@
                          &trans &trans &trans  &trans   &trans    &trans
           >;
 
-          sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+          sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         num_layer {
@@ -107,7 +107,7 @@
                        &trans &trans &trans     &kp KP_N0 &kp KP_DOT  &kp KP_ENTER      
           >;
 
-          sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+          sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         fn_layer {
@@ -125,7 +125,7 @@
                                    &none  &trans   &trans                     &kp C_PREV &kp C_NEXT &none
           >;
 
-          sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+          sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
   };
