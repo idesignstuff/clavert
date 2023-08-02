@@ -103,6 +103,7 @@
                   , <&macro_release &kp LSFT>
                   , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
       )
+
 ZMK_MACRO(RCT,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -112,12 +113,10 @@ ZMK_MACRO(RCT,
                   , <&macro_release &kp LSFT>
                   , <&kp C &kp A &kp T &kp DOT &kp C &kp O &kp M>;
       )
-    };
 ZMK_MACRO(RIT,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp C &kp D>
-                  ;
+        bindings = <&&kp R &kp I &kp T &kp C &kp H &kp C &kp D>;
       )
     };
 };
