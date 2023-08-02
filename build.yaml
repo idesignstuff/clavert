@@ -13,8 +13,8 @@
 #
 ---
 include:
-  - board: seeed_xiao
+  - board: seeeduino_xiao_ble
     shield: narsil_left
-  - board: seeed_xiao
+  - board: seeeduino_xiao_ble
     shield: narsil_right
 
