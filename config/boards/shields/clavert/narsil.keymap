@@ -23,71 +23,7 @@
 };
 
 
-/ {
-    macros {
-        degree_sym: degree_sym {
-            label = "Degree_symbol";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 40>,
-                <&macro_wait_time 40>,
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp N2 &kp N4 &kp N8>,
-                <&macro_pause_for_release>,
-                <&macro_release>;
-
-            tap-ms = <40>;
-            wait-ms = <40>;
-        };
-        C_A_D: C_A_D {
-            compatible = "zmk,behavior-macro";
-            label = "Control Alt Delete";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LA(LC(DEL))>,
-                <&macro_pause_for_release>,
-                <&macro_release>;
-
-            tap-ms = <100>;
-            wait-ms = <100>;
-        };
-        TM: TM {
-            compatible = "zmk,behavior-macro";
-            label = "TradeMark";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp N0 &kp N1 &kp N5 &kp N3>,
-                <&macro_pause_for_release>,
-                <&macro_release>;
-
-            tap-ms = <40>;
-            wait-ms = <40>;
-        };
-        CircleR: CircleR {
-            compatible = "zmk,behavior-macro";
-            label = "CircleR";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_N9>,
-                <&macro_release>,
-                <&macro_release>;
-
-            tap-ms = <40>;
-            wait-ms = <40>;
-        };
-      
-    };
-};
+/ 
 
 / {
     combos {
@@ -239,4 +175,82 @@ ZMK_MACRO(RIT,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&&kp R &kp I &kp T &kp C &kp H &kp C &kp D>;
-      )*/
+      )
+{
+    macros {
+cdr: cdr {
+            label = "cdr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp DOT &kp D &kp DOT &kp R &kp I &kp T &kp C &kp H &kp I &kp E>, 
+                  <&macro_press &kp LSFT>, 
+                  <&macro_tap &kp N2>,
+                  <&macro_release &kp LSFT>, 
+                  <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+
+            tap-ms = <40>;
+            wait-ms = <40>;
+        };
+        degree_sym: degree_sym {
+            label = "Degree_symbol";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap_time 40>,
+                <&macro_wait_time 40>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N4 &kp N8>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            tap-ms = <40>;
+            wait-ms = <40>;
+        };
+        C_A_D: C_A_D {
+            compatible = "zmk,behavior-macro";
+            label = "Control Alt Delete";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LA(LC(DEL))>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            tap-ms = <100>;
+            wait-ms = <100>;
+        };
+        TM: TM {
+            compatible = "zmk,behavior-macro";
+            label = "TradeMark";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N1 &kp N5 &kp N3>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            tap-ms = <40>;
+            wait-ms = <40>;
+        };
+        CircleR: CircleR {
+            compatible = "zmk,behavior-macro";
+            label = "CircleR";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N1 &kp KP_N6 &kp KP_N9>,
+                <&macro_release>,
+                <&macro_release>;
+
+            tap-ms = <40>;
+            wait-ms = <40>;
+        };
+      
+    };
+};*/
