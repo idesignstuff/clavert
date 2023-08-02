@@ -4,7 +4,7 @@
 if SHIELD_CLAVERT_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Clavert"
+	default "narsil"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
