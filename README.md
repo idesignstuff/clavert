@@ -7,13 +7,13 @@ It's a (pair of?) ZMK powered wireless ergonomic split keyboard.
 
 Below are some of the more important materials for the build. Misc materials not listed.
 
-- choc switches * 46 - 48
+- choc switches * 46, 47 or 48
 - 1N4148 diodes * 48
-- EC11 compatible encoder * 2
+- EC11 compatible encoder * 0, 1 or 2
 - 3.7v LiPo battery * 2
 - Seeeduino Xiao BLE (NRF52840) * 2
 
-This board only uses 1u keycaps because
+This board only uses choc-spaced (18x17mm) 1u keycaps because
 1. It's really hard to find keycap sets that come with enough 1.5u or 1.25u keys.
 2. Thanks to the rise of popularity of ortholinear keyboards it's relatively easy to find good ortho sets and they usually comes with many extra/novelty caps.
 3. Your milage may vary but I personally don't think >1u modifiers are necessary.
