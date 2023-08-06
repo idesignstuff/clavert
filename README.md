@@ -33,4 +33,5 @@ https://zmk.dev/docs/customization
 
 ## Credits
 ZMK developers!
+To rebase to ZMK 3.2, I forked the clavert repo, and modified from there.
 
