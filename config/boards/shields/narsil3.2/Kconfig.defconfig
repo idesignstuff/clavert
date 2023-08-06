@@ -1,7 +1,7 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CLAVERT_LEFT
+if SHIELD_NARSIL_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "narsil"
@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CLAVERT_LEFT || SHIELD_CLAVERT_RIGHT
+if SHIELD_NARSIL_LEFT || SHIELD_NARSIL_RIGHT
 
 config ZMK_SPLIT
 	default y
