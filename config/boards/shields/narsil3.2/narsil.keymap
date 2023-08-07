@@ -111,7 +111,7 @@
         };
 
         fn_layer {
-// ---------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------
 // | F1     | F2      | F3      | F4      | F5       |                      | F6    | F7     | F8     | F9      | F10  |
 // |BT_SEL 0| BT_SEL 1| BT_SEL 2| BT_SEL 3| BT_SEL 4 |                      | none  | BT_CLR | BT_PRV | BT_NXT  | none |
 // | OUT_TOG|    (    |    )    | none    | reset    |                      | reset | none   | none   | none    | none |
@@ -120,7 +120,7 @@
           bindings = <
     &kp F1       &kp F2        &kp F3      &kp F4       &kp F5                      &kp F6      &kp F7      &kp F8     &kp F9     &kp F10 
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none       &bt BT_CLR  &bt BT_PRV &bt BT_NXT &none   
-    &out OUT_TOG &kp LPAR     &kp RPAR     &none        &sys_reset                  &sys_reset  &none       &none      &none      &none
+    &out OUT_BLE &kp LPAR     &kp RPAR     &out OUT_TOG &sys_reset                  &sys_reset  &none       &none      &none      &none
     &bt BT_CLR   &kp LBKT     &kp RBKT     &none        &trans  &trans   &none      &none       &none       &none      &none      &none 
                                            &trans       &trans  &trans   &kp C_PREV &kp C_NEXT  &none
           >;
