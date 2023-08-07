@@ -9,6 +9,19 @@
   #include <dt-bindings/zmk/keys.h>
   #include <dt-bindings/zmk/bt.h>
   #include <dt-bindings/zmk/ext_power.h>
+  #include <dt-bindings/zmk/dynamic-macros.h>
+
+/ {
+    macros {
+        dyn: dyn {
+            label = "ZM_dynamic-macro";
+            compatible = "zmk,behavior-dynamic-macro";
+            #binding-cells = <1>;
+			no-output; // do not forward keystrokes to the host while recording
+			wait-ms = <10>; // disable so that recorded macros play back in the same speed they were recorded at
+        };
+    };
+};
 
   #define DEFAULT 0
   #define NAV     1
@@ -115,13 +128,13 @@
 // | F1     | F2      | F3      | F4      | F5       |                      | F6    | F7     | F8     | F9      | F10  |
 // |BT_SEL 0| BT_SEL 1| BT_SEL 2| BT_SEL 3| BT_SEL 4 |                      | none  | BT_CLR | BT_PRV | BT_NXT  | none |
 // | OUT_TOG|    (    |    )    | none    | reset    |                      | reset | none   | none   | none    | none |
-// |BT_CLR  |    [    |    ]    | none    | trans    |bootloader||bootloader| none  | none   | none   | none    | none |
+// |BT_CLR  |    [    |    ]    | none    | trans    |bootloader||bootloader| none  | none   | none   | none    | MacroCORD |
 //                              | trans   | trans    |   trans  ||  trans   | trans | trans  | 
           bindings = <
     &kp F1       &kp F2        &kp F3      &kp F4       &kp F5                      &kp F6      &kp F7      &kp F8     &kp F9     &kp F10 
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none       &bt BT_CLR  &bt BT_PRV &bt BT_NXT &none   
     &out OUT_BLE &kp LPAR     &kp RPAR     &out OUT_TOG &sys_reset                  &sys_reset  &none       &none      &none      &none
-    &bt BT_CLR   &kp LBKT     &kp RBKT     &none        &trans  &trans   &none      &none       &none       &none      &none      &none 
+    &bt BT_CLR   &kp LBKT     &kp RBKT     &none        &trans  &trans   &none      &none       &none       &none      &none      &dyn RECORD 
                                            &trans       &trans  &trans   &kp C_PREV &kp C_NEXT  &none
           >;
 
