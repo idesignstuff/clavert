@@ -11,7 +11,7 @@
   #include <dt-bindings/zmk/ext_power.h>
   #include <dt-bindings/zmk/dynamic-macros.h>
 
-/ {
+/*/ {
     macros {
         dyn: dyn {
             label = "ZM_dynamic-macro";
@@ -21,7 +21,7 @@
 			wait-ms = <10>; // disable so that recorded macros play back in the same speed they were recorded at
         };
     };
-};
+};*/
 
   #define DEFAULT 0
   #define NAV     1
