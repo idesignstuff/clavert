@@ -107,7 +107,7 @@
                        &trans &trans &trans    &kp KP_N0  &kp KP_DOT  &kp KP_ENTER      
           >;
 
-          sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DN UP>;
+          sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
         };
 
         fn_layer {
