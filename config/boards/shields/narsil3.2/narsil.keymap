@@ -55,7 +55,22 @@
     quick-release;
     /delete-property/ ignore-modifiers;
   };
+/ {
+    combos {
+        compatible = "zmk,combos";
 
+        combo_capslock {
+            bindings = <&caps_word>;
+            key-positions = <23 26>;
+            layers = <0>;
+        };
+        combo_hyphen{
+            bindings = <&kp UNDER>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+    };
+};
   / {
     keymap {
       compatible = "zmk,keymap";
@@ -73,7 +88,7 @@
     &kp Z     &kp X     &kp C         &kp V        &kp B  &kp LC(LA(DEL))       &kp C_MUTE &kp N      &kp M      &gqt SEMI COMMA &gqt LS(SEMI) DOT &gqt LG(L) FSLH 
                                     &lt FN ESC     &lt NAV SPACE  &lt NUM TAB   &lt NUM RET      &lt NAV BSPC    &lt FN DEL   
           >;
-          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         nav_layer {
