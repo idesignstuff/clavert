@@ -65,8 +65,14 @@
             layers = <0>;
         };
         combo_hyphen{
-            bindings = <&kp UNDER>;
+            bindings = <&kp MINUS>;
             key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        combo_equals{
+            bindings = <&kp EQUAL>;
+            key-positions = <18 19>;
             layers = <0>;
         };
     };
